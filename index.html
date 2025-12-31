@@ -16,6 +16,11 @@
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <!-- Theme toggle (dark / light) -->
+            <div class="theme-toggle">
+                <input id="theme-toggle" type="checkbox" aria-label="Toggle light theme">
+                <label for="theme-toggle" class="switch" title="Toggle theme"></label>
+            </div>
         </nav></header>
     <section id="about">
         <h2>About Me:</h2>
@@ -45,10 +50,43 @@
                 <div class="cert-gallery">
                     <button class="gallery-control prev" aria-label="Previous">◀</button>
                     <div class="cert-track">
-                        <!-- Add certificate thumbnails here as you download them -->
-                        <div class="cert-item"><p>No certificates yet — add downloaded images or PDFs here.</p></div>
-                        <div class="cert-item"><p>Placeholder item</p></div>
-                        <div class="cert-item"><p>Placeholder item</p></div>
+                        <!-- Certifications gallery: clicking a tile opens a modal with the PDF -->
+                        <button class="cert-thumb" data-src="Certifications/Coursera 2BG4EA1W9OT5.pdf" aria-label="Open certificate: Front-End Web Development">
+                            <img src="Certifications/thumbnails/Coursera 2BG4EA1W9OT5.svg" alt="Thumbnail for Front-End Web Development certificate">
+                            <p>Front-End Web Development</p>
+                        </button>
+                        <button class="cert-thumb" data-src="Certifications/Coursera 7VLH3EE678DA.pdf" aria-label="Open certificate: Python Programming">
+                            <img src="Certifications/thumbnails/Coursera 7VLH3EE678DA.svg" alt="Thumbnail for Python Programming certificate">
+                            <p>Python Programming</p>
+                        </button>
+                        <button class="cert-thumb" data-src="Certifications/Coursera 8YDJOY1QITYO.pdf" aria-label="Open certificate: UX Design">
+                            <img src="Certifications/thumbnails/Coursera 8YDJOY1QITYO.svg" alt="Thumbnail for UX Design certificate">
+                            <p>UX Design</p>
+                        </button>
+                        <button class="cert-thumb" data-src="Certifications/Coursera 9EK9ODWH3EST.pdf" aria-label="Open certificate: Cybersecurity Fundamentals">
+                            <img src="Certifications/thumbnails/Coursera 9EK9ODWH3EST.svg" alt="Thumbnail for Cybersecurity Fundamentals certificate">
+                            <p>Cybersecurity Fundamentals</p>
+                        </button>
+                        <button class="cert-thumb" data-src="Certifications/Coursera DCQ2R076GIQ1.pdf" aria-label="Open certificate: Agile Project Management">
+                            <img src="Certifications/thumbnails/Coursera DCQ2R076GIQ1.svg" alt="Thumbnail for Agile Project Management certificate">
+                            <p>Agile Project Management</p>
+                        </button>
+                        <button class="cert-thumb" data-src="Certifications/Coursera E3QKNSG6AV3J.pdf" aria-label="Open certificate: Ethical Hacking">
+                            <img src="Certifications/thumbnails/Coursera E3QKNSG6AV3J.svg" alt="Thumbnail for Ethical Hacking certificate">
+                            <p>Ethical Hacking</p>
+                        </button>
+                        <button class="cert-thumb" data-src="Certifications/Coursera ORNH94MLCQY3.pdf" aria-label="Open certificate: Game Design">
+                            <img src="Certifications/thumbnails/Coursera ORNH94MLCQY3.svg" alt="Thumbnail for Game Design certificate">
+                            <p>Game Design</p>
+                        </button>
+                        <button class="cert-thumb" data-src="Certifications/Coursera TXI7IKX1F70N.pdf" aria-label="Open certificate: Data Analysis">
+                            <img src="Certifications/thumbnails/Coursera TXI7IKX1F70N.svg" alt="Thumbnail for Data Analysis certificate">
+                            <p>Data Analysis</p>
+                        </button>
+                        <button class="cert-thumb" data-src="Certifications/Coursera Y2U2ZLAPGPZU.pdf" aria-label="Open certificate: Git & Version Control">
+                            <img src="Certifications/thumbnails/Coursera Y2U2ZLAPGPZU.svg" alt="Thumbnail for Git & Version Control certificate">
+                            <p>Git &amp; Version Control</p>
+                        </button>
                     </div>
                     <button class="gallery-control next" aria-label="Next">▶</button>
                 </div>
@@ -68,7 +106,24 @@
                 <div class="nested-accordion">
                     <button class="accordion-toggle" aria-expanded="false">Artwork</button>
                     <div class="accordion-panel" hidden>
-                        <p>Artwork projects and gallery go here.</p>
+                        <div class="art-gallery">
+                            <div class="art-track">
+                                <button class="art-thumb" data-src="artwork/cat.jpg" aria-label="Open artwork: Cat photo">
+                                    <img src="artwork/cat.jpg" alt="Cat artwork by William Phillips">
+                                    <p>Cat — Photo</p>
+                                </button>
+
+                                <button class="art-thumb" data-src="artwork/IMG_8874.jpg" aria-label="Open artwork: IMG 8874">
+                                    <img src="artwork/IMG_8874.jpg" alt="Artwork IMG_8874 by William Phillips">
+                                    <p>IMG_8874</p>
+                                </button>
+
+                                <button class="art-thumb" data-src="artwork/koi fish.jpg" aria-label="Open artwork: Koi Fish">
+                                    <img src="artwork/koi fish.jpg" alt="Koi fish artwork by William Phillips">
+                                    <p>Koi Fish — Painting</p>
+                                </button>
+                            </div>
+                        </div>
                     </div>
 
                     <button class="accordion-toggle" aria-expanded="false">Website Projects</button>
